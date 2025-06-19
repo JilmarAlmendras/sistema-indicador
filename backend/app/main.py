@@ -24,34 +24,23 @@ async def add_utf8_headers(request, call_next):
         response.headers["content-type"] = "application/json; charset=utf-8"
     return response
 
-# Configuración CORS para producción o desarrollo
-if os.getenv("RAILWAY_ENVIRONMENT_NAME"):
-    # Producción en Railway - CORS específico para Vercel + Railway + localhost
-    allowed_origins = [
-        "https://sistema-indicadores-omega.vercel.app/",
-        "https://sistema-indicadores-git-main-alecoronados-projects.vercel.app",
-        "https://sistema-indicadores-alecoronados-projects.vercel.app",
-        "https://sistema-indicadores-production.up.railway.app",
-        "http://localhost:5173",
-        "http://localhost:3000",
-    ]
-    
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=allowed_origins,
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
-else:
-    # Desarrollo local - CORS abierto
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=["*"],
-        allow_credentials=False,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
+# Configuración CORS (modo producción por defecto)
+allowed_origins = [
+    "https://sistema-indicadores-omega.vercel.app",
+    "https://sistema-indicadores-git-main-alecoronados-projects.vercel.app",
+    "https://sistema-indicadores-alecoronados-projects.vercel.app",
+    "https://sistema-indicadores-production.up.railway.app",
+    "http://localhost:5173",
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Incluir routers con prefijo /api
 app.include_router(indicadores.router, prefix="/api")
@@ -62,7 +51,7 @@ def read_root():
         "message": "Bienvenido a la API de Sistema de Indicadores",
         "version": "1.0.0",
         "status": "running",
-        "environment": os.getenv("RAILWAY_ENVIRONMENT_NAME", "development"),
+        "environment": "production",
         "database_configured": bool(os.getenv("DATABASE_URL"))
     }
 
