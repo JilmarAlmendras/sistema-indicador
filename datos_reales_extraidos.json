@@ -1,0 +1,806 @@
+[
+  {
+    "vp": "VPD",
+    "area": "Alianza Estratégica",
+    "nombreIndicador": "Acreditación gestión de recursos GCF",
+    "tipoIndicador": "Gestion",
+    "responsableGeneral": "Claudia Gutierrez",
+    "responsableCargaGeneral": "Rafael Ranieri",
+    "hitos": [
+      {
+        "nombreHito": "Formalización del interés en iniciar proceso",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-11-30",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Claudia Gutierrez"
+      },
+      {
+        "nombreHito": "Revisión procedimiento para Green Climate Fund (GCF)",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-10-31",
+        "avanceHito": 10,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Claudia Gutierrez"
+      },
+      {
+        "nombreHito": "Auto-evaluación GCF",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-04-18",
+        "avanceHito": 10,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Claudia Gutierrez"
+      },
+      {
+        "nombreHito": "Versión final presentada al DEJ para consideración",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-27",
+        "avanceHito": 5,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Claudia Gutierrez"
+      }
+    ]
+  },
+  {
+    "vp": "VPD",
+    "area": "Alianza Estratégica",
+    "nombreIndicador": "Acreditación gestión de recursos UE",
+    "tipoIndicador": "Gestion",
+    "responsableGeneral": "Claudia Gutierrez",
+    "responsableCargaGeneral": "Rafael Ranieri",
+    "hitos": [
+      {
+        "nombreHito": "Revisión procedimiento para EU Pilar Assessment",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-11-30",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Claudia Gutierrez"
+      },
+      {
+        "nombreHito": "Auto-evaluación EU Pilar Assessment",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-05",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Claudia Gutierrez"
+      },
+      {
+        "nombreHito": "Formalización del interés en iniciar proceso",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Claudia Gutierrez"
+      },
+      {
+        "nombreHito": "Inicio formal de la implementación del proceso de acreditación",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-27",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Claudia Gutierrez"
+      }
+    ]
+  },
+  {
+    "vp": "VPE",
+    "area": "Talento Humano",
+    "nombreIndicador": "Análisis de propuesta de valor y escalas salariales",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "Angel Torres",
+    "responsableCargaGeneral": "Angel Torres",
+    "hitos": [
+      {
+        "nombreHito": "Actualización de Política de Recursos Humanos",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 100,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Sociabilización e implementación",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 50,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Actualización de Manual y Reglamentos",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Contratación de consultoría ",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 30,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Aprobación de productos",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Implementación y sociabilización",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      }
+    ]
+  },
+  {
+    "vp": "VPD",
+    "area": "Efectividad y Desarrollo",
+    "nombreIndicador": "Aumento de Capital Suscripto",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "Rafael Ranieri",
+    "responsableCargaGeneral": "Rafael Ranieri",
+    "hitos": [
+      {
+        "nombreHito": "Versión final para revisión interna",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-04-16",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final para consideración interna",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-04-22",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final presentada al DEJ para consideración",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-06-09",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Recabar feedback DEJ y AG",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 80,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Considerar afinamientos con base en benchmarking actualizado",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 80,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Desarrollar criterios y escenarios para flexibilidad en el cronograma de pago",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 80,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Rafael Ranieri"
+      }
+    ]
+  },
+  {
+    "vp": "VPE",
+    "area": "TEI",
+    "nombreIndicador": "Cantidad de CTI realizados",
+    "tipoIndicador": "Gestion",
+    "responsableGeneral": "Matheus Seelend",
+    "responsableCargaGeneral": "Matheus Seelend",
+    "hitos": [
+      {
+        "nombreHito": "CTI en T1/2025",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Matheus Seelend"
+      },
+      {
+        "nombreHito": "CTI en T2/2025",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-06-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matheus Seelend"
+      },
+      {
+        "nombreHito": "CTI en T3/2025",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-09-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matheus Seelend"
+      },
+      {
+        "nombreHito": "CTI en T4/2025",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matheus Seelend"
+      }
+    ]
+  },
+  {
+    "vp": "VPE",
+    "area": "TEI",
+    "nombreIndicador": "Estrategia diseñada y aprobada TEI",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "Angel Torres",
+    "responsableCargaGeneral": "Angel Torres",
+    "hitos": [
+      {
+        "nombreHito": "Definición de TDRs",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 100,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Publicación de convocatoria",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 100,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Conclusión del proceso de contratación",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 20,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Aprobación de estrategia",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 20,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Implentación y socibilización",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 20,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      }
+    ]
+  },
+  {
+    "vp": "VPD",
+    "area": "Análisis y Estudios Ecónomicos",
+    "nombreIndicador": "Iniciativa para transparencia datos",
+    "tipoIndicador": "Gestion",
+    "responsableGeneral": "Matias Mednik",
+    "responsableCargaGeneral": "Rafael Ranieri",
+    "hitos": [
+      {
+        "nombreHito": "Comité Presenta Plan de Implementación de Reporte de Operaciones a IATI",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-06-30",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Matias Mednik"
+      },
+      {
+        "nombreHito": "Conversión de métodos y clasificaciones Fonplata al estándar de IATI",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-09-30",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Matias Mednik"
+      },
+      {
+        "nombreHito": "Aplicación para reportar aprobada por PRE enviada a IATI",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-09-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matias Mednik"
+      },
+      {
+        "nombreHito": "Inicio formal de reporte de nuestras operaciones",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "1900-01-10",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matias Mednik"
+      },
+      {
+        "nombreHito": "Comité define rango temporal de operaciones a reportar y frecuencia de actualización",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matias Mednik"
+      },
+      {
+        "nombreHito": "Tipo de sistema a desarrollar/emplear conforme el volumen de las operaciones",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matias Mednik"
+      },
+      {
+        "nombreHito": "Inicio formal de la implementación del proceso de acreditación",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matias Mednik"
+      },
+      {
+        "nombreHito": "Formación del Comité del proyecto IATI",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Matias Mednik"
+      }
+    ]
+  },
+  {
+    "vp": "VPD",
+    "area": "Efectividad y Desarrollo",
+    "nombreIndicador": "Nueva Estrategia Institucional",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "Rafael Ranieri",
+    "responsableCargaGeneral": "Rafael Ranieri",
+    "hitos": [
+      {
+        "nombreHito": "Versión final presentada a la AG",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-02-28",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Documento base - Estructura y directivas para desarrollo",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-02-28",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Incorporar contexto estratégico conectando con nichos",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-03-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Incorporar consideraciones sobre instrumentos",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-03-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Presentación para teste de informe basado en el MRC con base 2023",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-04-05",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión para revisión interna Estrategia + MRC",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-04-05",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final para consideración interna",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-04-20",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final y presentación para información al DEJ",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-05-05",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final presentada al DEJ para consideración",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2026-05-28",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final incorporando consideraciones DEJ para consideración interna",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-06-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Rafael Ranieri"
+      }
+    ]
+  },
+  {
+    "vp": "PRE",
+    "area": "Comunicación",
+    "nombreIndicador": "Nueva Identidad Visual",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "María Cazut",
+    "responsableCargaGeneral": "María Cazut",
+    "hitos": [
+      {
+        "nombreHito": "Inicio de consultoría",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-05-13",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "María Cazut"
+      },
+      {
+        "nombreHito": "Entrega Producto 1: Auditoría de marca",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-05-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "María Cazut"
+      },
+      {
+        "nombreHito": "Producto 2: Estrategia de marca",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-06-20",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "María Cazut"
+      },
+      {
+        "nombreHito": "Producto 3: Identidad visual y manual de marca",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-07-18",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "María Cazut"
+      },
+      {
+        "nombreHito": "Aprobación final y cierre",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-08-01",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "María Cazut"
+      },
+      {
+        "nombreHito": "Evaluación y adjudicación",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-05-03",
+        "avanceHito": 75,
+        "estadoHito": "En Progreso",
+        "responsableHito": "María Cazut"
+      },
+      {
+        "nombreHito": "TDRs y búsqueda de proveedores",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "María Cazut"
+      },
+      {
+        "nombreHito": "Publicación de convocatoria",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "María Cazut"
+      }
+    ]
+  },
+  {
+    "vp": "PRE",
+    "area": "Legal",
+    "nombreIndicador": "Nuevas Versiones Normativas",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "Karina Pereira",
+    "responsableCargaGeneral": "Karina Pereira",
+    "hitos": [
+      {
+        "nombreHito": "Revisión y elaboración de resoluciones aplicables.",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Karina Pereira"
+      },
+      {
+        "nombreHito": "Aprobación de normativa. ",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Karina Pereira"
+      },
+      {
+        "nombreHito": "Actualización de normativa en Lucid Chart ",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Karina Pereira"
+      },
+      {
+        "nombreHito": "Lucid Chart con links ",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-30",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "Karina Pereira"
+      },
+      {
+        "nombreHito": "Redacción de las versiones actualizadas.",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-09-30",
+        "avanceHito": 5,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Karina Pereira"
+      },
+      {
+        "nombreHito": "Todos los documentos a revisar iniciaron en 2025",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-08-30",
+        "avanceHito": 10,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Karina Pereira"
+      },
+      {
+        "nombreHito": "Jerarquía normativa completada por VPs.",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-04-30",
+        "avanceHito": 25,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Karina Pereira"
+      },
+      {
+        "nombreHito": "Identificación de normativas a  actualizar ",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-05-30",
+        "avanceHito": 25,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Karina Pereira"
+      },
+      {
+        "nombreHito": "Lucid chart jerarquía normativa institucional",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Karina Pereira"
+      }
+    ]
+  },
+  {
+    "vp": "VPD",
+    "area": "Efectividad y Desarrollo",
+    "nombreIndicador": "Planificacion Estratégica",
+    "tipoIndicador": "Gestion",
+    "responsableGeneral": "Rafael Ranieri",
+    "responsableCargaGeneral": "Rafael Ranieri",
+    "hitos": [
+      {
+        "nombreHito": "Versión para revisión interna",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-05-16",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final y presentación para información al DEJ",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-05-31",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final para consideración interna",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-05-20",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Incorporar contenido elaboración y ejecución",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-04-30",
+        "avanceHito": 70,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Versión final presentada a la AG",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 50,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Benchmarking",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 60,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Rafael Ranieri"
+      },
+      {
+        "nombreHito": "Estructura y directivas para desarrollo",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 50,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Rafael Ranieri"
+      }
+    ]
+  },
+  {
+    "vp": "PRE",
+    "area": "Gestión de Riesgos",
+    "nombreIndicador": "Proceso VPF en COSO",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "María Musso",
+    "responsableCargaGeneral": "María Musso",
+    "hitos": [
+      {
+        "nombreHito": " 50%  procesos  GTA  - GRC- COSO",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "Por Comenzar",
+        "responsableHito": "María Musso"
+      },
+      {
+        "nombreHito": "3 procesos de VPF aprobados- COSO",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-09-30",
+        "avanceHito": 33,
+        "estadoHito": "En Progreso",
+        "responsableHito": "María Musso"
+      },
+      {
+        "nombreHito": "Diagnóstico procesos GTA y GRC- COSO",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-06-30",
+        "avanceHito": 50,
+        "estadoHito": "En Progreso",
+        "responsableHito": "María Musso"
+      },
+      {
+        "nombreHito": "Diagnóstico procesos VPF- COSO ",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "María Musso"
+      }
+    ]
+  },
+  {
+    "vp": "VPE",
+    "area": "Talento Humano",
+    "nombreIndicador": "Programa progresivo de clima organizacional",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "Angel Torres",
+    "responsableCargaGeneral": "Angel Torres",
+    "hitos": [
+      {
+        "nombreHito": "Definición de TDR´s para consultoría",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 100,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Contratación",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 20,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Revisión y aprobación de productos",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      },
+      {
+        "nombreHito": "Implementación y socibilización",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 0,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Angel Torres"
+      }
+    ]
+  },
+  {
+    "vp": "PRE",
+    "area": "Auditoria",
+    "nombreIndicador": "Sistema Auditoria Implementado",
+    "tipoIndicador": "Estratégico",
+    "responsableGeneral": "Nestor Espinola",
+    "responsableCargaGeneral": "Nestor Espinola",
+    "hitos": [
+      {
+        "nombreHito": "8 trabajos de auditoria acum finalizados + Plan 2026",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-12-31",
+        "avanceHito": 5,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Nestor Espinola"
+      },
+      {
+        "nombreHito": "6 trabajos de auditoria acum en proceso",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-10-31",
+        "avanceHito": 35,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Nestor Espinola"
+      },
+      {
+        "nombreHito": "3 trabajos de auditoria en proceso",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-07-31",
+        "avanceHito": 40,
+        "estadoHito": "En Progreso",
+        "responsableHito": "Nestor Espinola"
+      },
+      {
+        "nombreHito": "Sistema de Auditoria Operativo",
+        "fechaInicioHito": "2025-01-01",
+        "fechaFinalizacionHito": "2025-03-31",
+        "avanceHito": 100,
+        "estadoHito": "Completado",
+        "responsableHito": "Nestor Espinola"
+      }
+    ]
+  }
+]

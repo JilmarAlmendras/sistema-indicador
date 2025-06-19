@@ -1,0 +1,16 @@
+# Nixpacks configuration for Railway deployment
+[variables]
+    NPM_CONFIG_PRODUCTION = "false"
+    NODE_ENV = "production"
+    
+[phases.build]
+    cmds = [
+        "npm ci",
+        "npm run build"
+    ]
+
+[phases.start]
+    cmd = "npm run start"
+
+[phases.install]
+    cmds = ["npm ci --include=dev"] 

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 Debug Mixed Content - Sistema de Indicadores</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .warning { background-color: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        .info { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+            font-weight: bold;
+        }
+        button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        pre { background: #f8f9fa; padding: 15px; border-radius: 6px; overflow-x: auto; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        h1 { color: #667eea; text-align: center; }
+        h2 { color: #764ba2; border-bottom: 2px solid #667eea; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Debug Mixed Content & API</h1>
+        <p><strong>Herramienta de diagnóstico</strong> para verificar configuración de URLs y solucionar problemas de Mixed Content.</p>
+
+        <!-- INFORMACIÓN DEL ENTORNO -->
+        <h2>🌍 Información del Entorno</h2>
+        <div id="environmentInfo"></div>
+
+        <!-- CONFIGURACIÓN API -->
+        <h2>⚙️ Configuración API</h2>
+        <div id="apiConfig"></div>
+
+        <!-- TESTS DE CONECTIVIDAD -->
+        <h2>🧪 Tests de Conectividad</h2>
+        <div>
+            <button onclick="testBackendHealth()">🏥 Test Health</button>
+            <button onclick="testBackendCORS()">🌐 Test CORS</button>
+            <button onclick="testApiIndicadores()">📊 Test API Indicadores</button>
+            <button onclick="testAllEndpoints()">🚀 Test Completo</button>
+        </div>
+        <div id="testResults"></div>
+
+        <!-- LOGS EN TIEMPO REAL -->
+        <h2>📋 Logs de Depuración</h2>
+        <div>
+            <button onclick="clearLogs()">🗑️ Limpiar Logs</button>
+            <button onclick="exportLogs()">💾 Exportar Logs</button>
+        </div>
+        <pre id="debugLogs"></pre>
+
+        <!-- SOLUCIONES RECOMENDADAS -->
+        <h2>💡 Soluciones Recomendadas</h2>
+        <div id="recommendations"></div>
+    </div>
+
+    <script>
+        // 🌍 CONFIGURACIÓN GLOBAL
+        let logs = [];
+        let apiConfig = {};
+
+        // 📝 FUNCIÓN DE LOGGING
+        function log(level, message, data = null) {
+            const timestamp = new Date().toISOString();
+            const logEntry = { timestamp, level, message, data };
+            logs.push(logEntry);
+            
+            const logElement = document.getElementById('debugLogs');
+            const logLine = `[${timestamp}] ${level.toUpperCase()}: ${message}`;
+            logElement.textContent += logLine + '\n';
+            logElement.scrollTop = logElement.scrollHeight;
+
+            // También enviar a console del browser
+            console.log(logLine, data || '');
+        }
+
+        // 🔧 DETECTAR CONFIGURACIÓN DEL ENTORNO
+        function detectEnvironment() {
+            const hostname = window.location.hostname;
+            const protocol = window.location.protocol;
+            const isLocal = ['localhost', '127.0.0.1'].includes(hostname);
+            
+            log('INFO', `Hostname detectado: ${hostname}`);
+            log('INFO', `Protocolo detectado: ${protocol}`);
+            log('INFO', `Entorno: ${isLocal ? 'DESARROLLO' : 'PRODUCCIÓN'}`);
+
+            // Configuración de API basada en entorno
+            if (isLocal) {
+                apiConfig = {
+                    environment: 'development',
+                    baseUrl: 'http://localhost:8000',
+                    protocol: 'http'
+                };
+            } else {
+                // Intentar obtener desde variable de entorno o usar default
+                const envApiUrl = 'https://backend-indicadores-production.up.railway.app'; // Default
+                apiConfig = {
+                    environment: 'production',
+                    baseUrl: envApiUrl,
+                    protocol: 'https'
+                };
+            }
+
+            log('SUCCESS', `Configuración API: ${apiConfig.baseUrl}`);
+            return { hostname, protocol, isLocal, apiConfig };
+        }
+
+        // 📊 MOSTRAR INFORMACIÓN DEL ENTORNO
+        function showEnvironmentInfo() {
+            const env = detectEnvironment();
+            const info = document.getElementById('environmentInfo');
+            
+            info.innerHTML = `
+                <div class="grid">
+                    <div>
+                        <h3>🌐 Frontend</h3>
+                        <div class="${env.protocol === 'https:' ? 'success' : 'warning'} status">
+                            Protocolo: ${env.protocol}
+                        </div>
+                        <div class="info status">
+                            Hostname: ${env.hostname}
+                        </div>
+                        <div class="info status">
+                            URL Completa: ${window.location.href}
+                        </div>
+                    </div>
+                    <div>
+                        <h3>🔧 Backend</h3>
+                        <div class="${env.apiConfig.protocol === 'https' ? 'success' : 'warning'} status">
+                            Protocolo: ${env.apiConfig.protocol}
+                        </div>
+                        <div class="info status">
+                            URL Base: ${env.apiConfig.baseUrl}
+                        </div>
+                        <div class="info status">
+                            Entorno: ${env.apiConfig.environment}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ⚙️ MOSTRAR CONFIGURACIÓN API
+        function showApiConfig() {
+            const config = document.getElementById('apiConfig');
+            const mixedContentRisk = (window.location.protocol === 'https:' && apiConfig.baseUrl.startsWith('http://'));
+            
+            config.innerHTML = `
+                <div class="${mixedContentRisk ? 'error' : 'success'} status">
+                    ${mixedContentRisk 
+                        ? '❌ RIESGO MIXED CONTENT: Frontend HTTPS + Backend HTTP' 
+                        : '✅ Configuración de protocolos segura'
+                    }
+                </div>
+                <pre>${JSON.stringify(apiConfig, null, 2)}</pre>
+                ${mixedContentRisk ? `
+                    <div class="error status">
+                        <strong>Solución:</strong> Configurar VITE_API_URL con HTTPS en variables de entorno
+                    </div>
+                ` : ''}
+            `;
+        }
+
+        // 🧪 FUNCIÓN GENÉRICA PARA TESTS API
+        async function testApiCall(endpoint, description) {
+            const fullUrl = `${apiConfig.baseUrl}${endpoint}`;
+            log('INFO', `Testing ${description}: ${fullUrl}`);
+            
+            try {
+                const response = await fetch(fullUrl, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    mode: 'cors'
+                });
+
+                // Verificar Mixed Content
+                if (window.location.protocol === 'https:' && response.url.startsWith('http://')) {
+                    throw new Error(`Mixed Content detectado: ${response.url}`);
+                }
+
+                const data = await response.json();
+                log('SUCCESS', `${description} exitoso`, { status: response.status, data });
+                return { success: true, status: response.status, data };
+
+            } catch (error) {
+                log('ERROR', `${description} falló: ${error.message}`, error);
+                return { success: false, error: error.message };
+            }
+        }
+
+        // 🏥 TEST HEALTH CHECK
+        async function testBackendHealth() {
+            const result = await testApiCall('/health', 'Health Check');
+            updateTestResults('health', result);
+        }
+
+        // 🌐 TEST CORS
+        async function testBackendCORS() {
+            const result = await testApiCall('/test-cors', 'CORS Test');
+            updateTestResults('cors', result);
+        }
+
+        // 📊 TEST API INDICADORES
+        async function testApiIndicadores() {
+            const result = await testApiCall('/api/indicadores', 'API Indicadores');
+            updateTestResults('indicadores', result);
+        }
+
+        // 🚀 TEST COMPLETO
+        async function testAllEndpoints() {
+            log('INFO', 'Iniciando test completo...');
+            
+            const tests = [
+                { name: 'health', func: testBackendHealth },
+                { name: 'cors', func: testBackendCORS },
+                { name: 'indicadores', func: testApiIndicadores }
+            ];
+
+            for (const test of tests) {
+                await test.func();
+                await new Promise(resolve => setTimeout(resolve, 1000)); // Pausa entre tests
+            }
+
+            log('SUCCESS', 'Test completo finalizado');
+        }
+
+        // 📋 ACTUALIZAR RESULTADOS DE TESTS
+        function updateTestResults(testName, result) {
+            const resultsDiv = document.getElementById('testResults');
+            const statusClass = result.success ? 'success' : 'error';
+            const statusIcon = result.success ? '✅' : '❌';
+            
+            const testResult = `
+                <div class="${statusClass} status">
+                    ${statusIcon} <strong>${testName.toUpperCase()}:</strong> 
+                    ${result.success ? 'EXITOSO' : 'FALLÓ'}
+                    ${result.error ? ` - ${result.error}` : ''}
+                </div>
+            `;
+            
+            resultsDiv.innerHTML += testResult;
+        }
+
+        // 🗑️ LIMPIAR LOGS
+        function clearLogs() {
+            logs = [];
+            document.getElementById('debugLogs').textContent = '';
+            document.getElementById('testResults').innerHTML = '';
+            log('INFO', 'Logs limpiados');
+        }
+
+        // 💾 EXPORTAR LOGS
+        function exportLogs() {
+            const logsText = logs.map(log => 
+                `[${log.timestamp}] ${log.level}: ${log.message} ${log.data ? JSON.stringify(log.data) : ''}`
+            ).join('\n');
+            
+            const blob = new Blob([logsText], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `debug-logs-${new Date().toISOString().slice(0,19)}.txt`;
+            a.click();
+            
+            log('SUCCESS', 'Logs exportados');
+        }
+
+        // 💡 MOSTRAR RECOMENDACIONES
+        function showRecommendations() {
+            const recommendations = document.getElementById('recommendations');
+            const mixedContentRisk = (window.location.protocol === 'https:' && apiConfig.baseUrl.startsWith('http://'));
+            
+            let recommendationsHTML = '';
+            
+            if (mixedContentRisk) {
+                recommendationsHTML += `
+                    <div class="error status">
+                        <h4>🚨 CRITICAL: Mixed Content detectado</h4>
+                        <p><strong>Problema:</strong> Tu frontend usa HTTPS pero el backend usa HTTP.</p>
+                        <p><strong>Solución:</strong> Configurar <code>VITE_API_URL=https://tu-backend-railway.up.railway.app</code></p>
+                    </div>
+                `;
+            }
+
+            if (apiConfig.environment === 'development') {
+                recommendationsHTML += `
+                    <div class="warning status">
+                        <h4>⚠️ Entorno de Desarrollo</h4>
+                        <p>Estás en desarrollo local. Asegúrate de que el backend esté corriendo en puerto 8000.</p>
+                    </div>
+                `;
+            }
+
+            recommendationsHTML += `
+                <div class="info status">
+                    <h4>🔧 Checklist General</h4>
+                    <ul>
+                        <li>✅ Backend debe usar HTTPS en producción</li>
+                        <li>✅ CORS debe incluir el origen del frontend</li>
+                        <li>✅ Variables de entorno configuradas correctamente</li>
+                        <li>✅ Certificates SSL válidos</li>
+                    </ul>
+                </div>
+            `;
+
+            recommendations.innerHTML = recommendationsHTML;
+        }
+
+        // 🚀 INICIALIZACIÓN
+        document.addEventListener('DOMContentLoaded', function() {
+            log('INFO', 'Iniciando herramienta de debug...');
+            
+            showEnvironmentInfo();
+            showApiConfig();
+            showRecommendations();
+            
+            log('SUCCESS', 'Herramienta de debug lista');
+        });
+    </script>
+</body>
+</html> 

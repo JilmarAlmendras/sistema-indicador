@@ -1,0 +1,144 @@
+# 🏗️ MONOREPO STRUCTURE - HORIZONS PROJECT
+# Frontend (React + Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Backend (FastAPI + Python)
+backend/venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/**/__pycache__/
+backend/*.db
+backend/*.sqlite
+backend/indicadores.db
+backend/.env
+
+# Global Dependencies & Builds
+node_modules/
+*/node_modules/
+dist/
+build/
+*/dist/
+*/build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Cache directories
+.npm
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.cache
+.parcel-cache
+
+# Optional REPL history
+.node_repl_history
+
+# Build outputs
+.next
+.nuxt
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Package files
+*.tgz
+*.tar.gz
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+bower_components
+
+# TypeScript v1 declaration files
+typings/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Railway deployment files
+.railway/
+
+# Backup files
+*.bak
+*.backup
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls 

@@ -1,0 +1,21 @@
+{
+  "build": {
+    "builder": "nixpacks"
+  },
+  "deploy": {
+    "startCommand": "gunicorn app.main:app --bind 0.0.0.0:$PORT --workers 4 --worker-class uvicorn.workers.UvicornWorker --timeout 120 --keep-alive 2 --access-logfile - --error-logfile -",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 100,
+    "restartPolicyType": "ON_FAILURE",
+    "sleepApplication": false
+  },
+  "environments": {
+    "production": {
+      "variables": {
+        "ENVIRONMENT": "production",
+        "FORCE_HTTPS": "true",
+        "RAILWAY_FORCE_HTTPS": "true"
+      }
+    }
+  }
+} 
